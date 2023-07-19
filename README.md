@@ -10,3 +10,6 @@ This project follows a CRISP-DM process to gain insights from AirBnB rental data
 ## Data
 Udacity suggested [Kaggle](https://www.kaggle.com/datasets/airbnb/seattle) as a source for AirBnB rental data; however, the primary source, [Inside AirBnB](http://insideairbnb.com/get-the-data), offered updated data with more observations in the same format, so those data were used.
 
+## Python Libraries
+- numpy
+- pandas
