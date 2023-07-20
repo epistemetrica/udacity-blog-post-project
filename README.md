@@ -18,3 +18,21 @@ The code for this project is written in a Jupyter (v2023.6.1101941928) notebook 
 - pandas
 - matplotlib
 
+## Project Criteria
+
+### CRISP-DM Process
+#### Business Understanding
+
+Questions:
+- What factors influence price?
+    - Sales data are not included in this set, so we will look at which factors influence _asking_ prices.
+- What factors influence total revenue?
+    - Common sense dictates that reviews from previous renters impact future sales
+    - Since whether a listing is booked is not captured in these data, we will try to predict reviews based on advertised features
+
+
+#### Data Understanding
+#### Data Preparation
+#### Data Modeling
+#### Result Evaluation
+#### Deployment 
