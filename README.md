@@ -41,6 +41,9 @@ These limitations prevent us from directly analyzing the factors that influence 
 
 
 #### Data Preparation
+
+Inside AirBnB provides quite tidy data, and little preparation is required in order to execute basic analyses. 
+
 #### Data Modeling
 #### Result Evaluation
 #### Deployment 
