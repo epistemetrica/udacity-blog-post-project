@@ -2,3 +2,4 @@ airbnb_data_seattle/calendar.csv
 airbnb_data_seattle/listings.csv
 airbnb_data_seattle/reviews.csv
 map_data_seattle/2020_Census_Blocks_-_Seattle.geojson
+map_data_seattle/neighbourhoods.geojson
