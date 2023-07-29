@@ -28,6 +28,8 @@ The code for this project is written in a Jupyter (v2023.6.1101941928) notebook 
 
 How can sellers maximize profits? How can buyers maximize the value they receive for their dollar? To answer these fundamental questions, we need to examine the following:
 - What factors influence price?
+    - How do neighborhoods influence price?
+    - What effect does host type have on prices?
 - How likely (and how often) is a listing to sell at the asking price?
 
 #### Data Understanding
