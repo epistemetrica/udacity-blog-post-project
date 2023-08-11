@@ -4,8 +4,8 @@ Adam Wilson, July 2023
 
 ## Project Description
 This project follows a CRISP-DM process to gain insights from AirBnB rental data in Seattle, WA. The project is graded according to [this rubric](https://review.udacity.com/#!/rubrics/1507/view) and consists of the following parts:
-- This [repository](https://github.com/epistemetrica/udacity-blog-post-project), including the main jupyter notebook and this README.
-- A cooresponding [Medium blog post]() communicating insights to a non-technical audience. 
+- The [github repository](https://github.com/epistemetrica/udacity-blog-post-project), including the main jupyter notebook and this README.
+- A cooresponding [Medium blog post](https://medium.com/@wilson.adamp/price-determinants-in-the-seattle-airbnb-rentals-market-de0ac00b0d81) communicating insights to a non-technical audience. 
 
 ## Data
 
@@ -14,38 +14,25 @@ Udacity suggested [Kaggle](https://www.kaggle.com/datasets/airbnb/seattle) as a 
 This data set is from a single AirBnB market - Seattle, WA. 
 
 ## Code
-The code for this project is written in a Jupyter (v2023.6.1101941928) notebook running a Python 3.9.16 kernel. 
+The code for this project is written in a Jupyter (v2023.6.1101941928) notebook running a Python 3.11.3 kernel in a virtual environment. 
 
 ### Python Libraries
 - numpy
 - pandas
-- matplotlib
+- scipy
+- matplotlib.pyplot
+- matplotlib.dates
+- seaborn
+- [folium](https://python-visualization.github.io/folium/)
+- geopandas
+    - installation of geopandas can be problematic in some environments; I recommend installing with the conda-forge channel per [these instructions](https://geopandas.org/en/stable/getting_started/install.html) 
+- geopy
+- KNNImputer from sklearn.impute
+- LinearRegression from sklearn.linear_model
+- train_test_split from sklearn.model_selection
+- r2_score from sklearn.metrics
+- [statsmodels.api](https://www.statsmodels.org/stable/install.html)
+- het_white from statsmodels.stats.diagnostic 
 
 ## Project Criteria
 
-### CRISP-DM Process
-#### Business Understanding
-
-How can sellers maximize profits? How can buyers maximize the value they receive for their dollar? To answer these fundamental questions, we need to examine the following:
-- What factors influence price?
-    - How do neighborhoods influence price?
-    - What effect does host type have on prices?
-- How likely (and how often) is a listing to sell at the asking price?
-
-#### Data Understanding
-
-The data are scraped from AirBnB's website, and thus are inherently marketing data&mdash;they do not contain actual records of sales. This is a significant limitation, as all we observe are _asking_ prices rather than sales prices (for example, we do not observe whether any discounts, refunds or price corrections were issued). We also do not observe whether or not the listing sold, only when it is available for booking in the future (we do not observe whether a listing is unavailable because it has been booked or if the host has blocked the dates). 
-
-These limitations prevent us from directly analyzing the factors that influence sales; however, there is still much we can learn. In this project, we address the following questions:
-- How do the aspects of a listing (e.g., location, amenities, reviews) influence asking prices?
-- How do the aspects of a listing influence renter reviews? 
-    - Since all we have are the text of the reviews (i.e., we do not have a rating associated with each text review), we must first estimate review sentiment with pre-trained models. 
-
-
-#### Data Preparation
-
-Inside AirBnB provides quite tidy data, and little preparation is required in order to execute basic analyses. 
-
-#### Data Modeling
-#### Result Evaluation
-#### Deployment 
